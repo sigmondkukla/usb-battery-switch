@@ -1,0 +1,3 @@
+[submodule "kicad-library-sigmondkukla"]
+	path = kicad-library-sigmondkukla
+	url = git@github.com:sigmondkukla/kicad-library-sigmondkukla
