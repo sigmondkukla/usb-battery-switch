@@ -1842,7 +1842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08c22b94-2522-4712-a7f2-f0aed066be30")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR010"
 			(at 76.2 158.75 0)
 			(effects
 				(font
@@ -1892,7 +1892,7 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR08")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -1908,7 +1908,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f5979da-92e3-4abc-a5da-ba1927e7adce")
-		(property "Reference" "R9"
+		(property "Reference" "R2"
 			(at 48.26 119.3799 0)
 			(effects
 				(font
@@ -1962,7 +1962,7 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "R9")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2023,7 +2023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\Sigmond\\Programming\\flight-computer\\pcb\\kicad-library-sigmondkukla\\spice\\DMG2305UX.spice.txt"
+		(property "Sim.Library" "kicad-library-sigmondkukla\\spice\\DMG2305UX.spice.txt"
 			(at 99.06 114.3 0)
 			(effects
 				(font
@@ -2093,7 +2093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23be6d69-9c88-40be-a089-b2cb4afee43b")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR04"
 			(at 25.4 158.75 0)
 			(effects
 				(font
@@ -2143,7 +2143,7 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR06")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2159,7 +2159,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3296ad4e-819b-4141-a913-bccf62adc022")
-		(property "Reference" "R10"
+		(property "Reference" "R4"
 			(at 73.66 106.6799 0)
 			(effects
 				(font
@@ -2213,7 +2213,116 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "R10")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
+		(at 73.66 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "336af8b7-5659-4a97-98dd-5b25282d780a")
+		(property "Reference" "Q2"
+			(at 80.01 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NTR4003N"
+			(at 80.01 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 73.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "kicad-library-sigmondkukla\\spice\\NTR4003N.LIB"
+			(at 73.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "ntr4003n"
+			(at 73.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 73.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=2 2=3 3=1"
+			(at 73.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bac94d48-0f73-4271-8fd4-abffc54b3360")
+		)
+		(pin "2"
+			(uuid "0a644dff-279b-4ca3-bdc9-82ae8e7ff844")
+		)
+		(pin "1"
+			(uuid "abc8c2f1-83a2-4903-8771-d74908694d0b")
+		)
+		(instances
+			(project "switch"
+				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -2228,7 +2337,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "348c8b8c-c5f0-4db2-bc6f-f2b18d3a2331")
-		(property "Reference" "V1"
+		(property "Reference" "V2"
 			(at 54.61 68.4501 0)
 			(effects
 				(font
@@ -2319,7 +2428,7 @@
 		(instances
 			(project "power"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "V1")
+					(reference "V2")
 					(unit 1)
 				)
 			)
@@ -2341,7 +2450,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c345723-e9a2-4dfc-8f3e-ddca1c4e8373")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 76.2 105.41 0)
 			(effects
 				(font
@@ -2391,7 +2500,113 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR010")
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky_Filled")
+		(at 114.3 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43a30874-bc2f-42e6-a5cc-c86d431334e9")
+		(property "Reference" "D2"
+			(at 116.84 132.3974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SS24"
+			(at 116.84 134.9374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode, filled shape"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "kicad-library-sigmondkukla\\spice\\SS22T3.REV0.LIB"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "Dss22"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67ba3519-50b4-4495-9eca-f9fcc5c1d229")
+		)
+		(pin "2"
+			(uuid "ff1c76c1-c0ff-45d9-bd5b-2081dd50de37")
+		)
+		(instances
+			(project "switch"
+				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -2407,7 +2622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ac3ec93-af7b-43ba-a900-064767e880d3")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR012"
 			(at 114.3 130.81 0)
 			(effects
 				(font
@@ -2457,7 +2672,7 @@
 		(instances
 			(project ""
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR04")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -2473,7 +2688,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f501816-0185-46f5-be01-c593ee42c4ab")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR03"
 			(at 25.4 140.97 0)
 			(effects
 				(font
@@ -2523,7 +2738,7 @@
 		(instances
 			(project ""
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR011")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2539,7 +2754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "688f8507-463c-4187-a82a-7a343c2dc8ec")
-		(property "Reference" "R8"
+		(property "Reference" "R3"
 			(at 57.15 120.65 90)
 			(effects
 				(font
@@ -2591,7 +2806,7 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "R8")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -2607,7 +2822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b5f5a3f-1cd3-4b16-9543-6fe04c730d31")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR011"
 			(at 101.6 105.41 0)
 			(effects
 				(font
@@ -2657,7 +2872,7 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR012")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -2673,7 +2888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86c3b1fa-9dd3-417f-bd77-e4ad63d4d7d8")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 50.8 118.11 0)
 			(effects
 				(font
@@ -2723,7 +2938,7 @@
 		(instances
 			(project ""
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2784,7 +2999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\Sigmond\\Programming\\flight-computer\\pcb\\kicad-library-sigmondkukla\\spice\\NTR4003N.LIB"
+		(property "Sim.Library" "kicad-library-sigmondkukla\\spice\\NTR4003N.LIB"
 			(at 48.26 139.7 0)
 			(effects
 				(font
@@ -2848,7 +3063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94766b58-8afc-45f1-8520-a52d78a80f76")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR06"
 			(at 50.8 82.55 0)
 			(effects
 				(font
@@ -2898,122 +3113,13 @@
 		(instances
 			(project "power"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR01")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
 			(project "flight-computer"
 				(path "/84bf90ca-3018-4167-b21c-becfa336d24d/ace2fb17-bc8d-4b92-8c62-07f64ea4f5e3"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
-		(at 73.66 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95d97e89-0275-47ec-ae62-59a622a60128")
-		(property "Reference" "Q2"
-			(at 80.01 125.7299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NTR4003N"
-			(at 80.01 128.2699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 73.66 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\Sigmond\\Programming\\flight-computer\\pcb\\kicad-library-sigmondkukla\\spice\\NTR4003N.LIB"
-			(at 73.66 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "ntr4003n"
-			(at 73.66 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 73.66 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=3 3=1"
-			(at 73.66 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "3531118f-41d1-4394-8f58-9ff60d31468e")
-		)
-		(pin "2"
-			(uuid "581f956b-2ff7-46b2-86b9-e4ef650f1ef8")
-		)
-		(pin "1"
-			(uuid "9cf526d2-e16d-403a-b452-806c90f5e13e")
-		)
-		(instances
-			(project "power-onlyfets"
-				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -3029,7 +3135,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0fe4dd2-66dc-48fd-a366-7af35d1b5487")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR01"
 			(at 25.4 67.31 0)
 			(effects
 				(font
@@ -3079,7 +3185,7 @@
 		(instances
 			(project ""
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR02")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -3095,7 +3201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a973eb6d-815c-4dd8-a5cd-acc9d758587e")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR05"
 			(at 50.8 67.31 0)
 			(effects
 				(font
@@ -3145,7 +3251,7 @@
 		(instances
 			(project ""
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR03")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3161,7 +3267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abfe9ad7-120c-4786-a27b-8206529d921e")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR02"
 			(at 25.4 82.55 0)
 			(effects
 				(font
@@ -3211,7 +3317,7 @@
 		(instances
 			(project "power"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR05")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3227,7 +3333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b55e30af-4b5b-49e9-a08f-c9b1cb76eb45")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 104.14 132.3974 90)
 			(effects
 				(font
@@ -3272,7 +3378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\Sigmond\\Programming\\flight-computer\\pcb\\kicad-library-sigmondkukla\\spice\\SS12.spice.txt"
+		(property "Sim.Library" "kicad-library-sigmondkukla\\spice\\SS22T3.REV0.LIB"
 			(at 101.6 133.35 0)
 			(effects
 				(font
@@ -3281,7 +3387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "SS12"
+		(property "Sim.Name" "Dss22"
 			(at 101.6 133.35 0)
 			(effects
 				(font
@@ -3317,7 +3423,7 @@
 		(instances
 			(project "power"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3333,7 +3439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb85822d-1cbb-4e91-bae0-512875ddc2c1")
-		(property "Reference" "R7"
+		(property "Reference" "R1"
 			(at 27.94 144.7799 0)
 			(effects
 				(font
@@ -3387,7 +3493,7 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "R7")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3403,7 +3509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3d5a52b-e549-427e-bade-5901bfa77d31")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 82.55 107.95 90)
 			(effects
 				(font
@@ -3455,7 +3561,7 @@
 		(instances
 			(project ""
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3536,7 +3642,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf97ecfd-01ba-46e6-ad25-849f5dc85f28")
-		(property "Reference" "R1"
+		(property "Reference" "R6"
 			(at 133.35 146.05 90)
 			(effects
 				(font
@@ -3588,7 +3694,7 @@
 		(instances
 			(project ""
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "R1")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3604,7 +3710,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d707e3a8-f37b-44be-95b3-18f8c1f5e1bd")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR08"
 			(at 50.8 158.75 0)
 			(effects
 				(font
@@ -3654,7 +3760,7 @@
 		(instances
 			(project "power-onlyfets"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "#PWR07")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3670,7 +3776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d78328d7-363c-4354-9f97-8ea154d96bd1")
-		(property "Reference" "V2"
+		(property "Reference" "V1"
 			(at 29.21 68.4501 0)
 			(effects
 				(font
@@ -3752,119 +3858,7 @@
 		(instances
 			(project "power"
 				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "V2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky_Filled")
-		(at 114.3 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f88ca120-b472-434b-9055-b47859598a11")
-		(property "Reference" "D1"
-			(at 116.84 132.3974 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SS24"
-			(at 116.84 134.9374 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode, filled shape"
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\Sigmond\\Programming\\flight-computer\\pcb\\kicad-library-sigmondkukla\\spice\\SS12.spice.txt"
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "SS12"
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fbb8dc11-081d-4102-b7a6-5b6e853c8f25")
-		)
-		(pin "2"
-			(uuid "1a3f4245-4de4-4f02-a85a-57794ea998e5")
-		)
-		(instances
-			(project "power"
-				(path "/34e5c4a1-491a-4505-9ede-f7d7991b8954"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/84bf90ca-3018-4167-b21c-becfa336d24d/ace2fb17-bc8d-4b92-8c62-07f64ea4f5e3"
-					(reference "D3")
+					(reference "V1")
 					(unit 1)
 				)
 			)
